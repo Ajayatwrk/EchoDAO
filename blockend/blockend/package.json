@@ -1,0 +1,23 @@
+{
+  "name": "re-genesis-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy:testnet2": "hardhat run scripts/deploy.ts --network core_testnet2",
+    "create:project:testnet2": "hardhat run scripts/createProject.ts --network core_testnet2",
+    "demo:funding:testnet2": "hardhat run scripts/demoFunding.ts --network core_testnet2",
+    "info:testnet2": "hardhat run scripts/getContractInfo.ts --network core_testnet2",
+    "test:contract": "hardhat run scripts/testContract.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1",
+    "hardhat": "^2.22.5",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2"
+  }
+}
